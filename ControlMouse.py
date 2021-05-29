@@ -1,7 +1,7 @@
 import cv2
 import time
 import numpy as np
-import module as htm
+import module as m
 import autopy
 
 wCam, hCam = 640, 480
@@ -9,7 +9,7 @@ pTime = 0
 smoothenImg = 7
 plocX, plocY = 0, 0
 clocX, clocY = 0, 0
-detector = htm.handDetector(maxHands=1)
+detector = m.handDetector(maxHands=1)
 frameR = 100  # frame Reduction
 cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
